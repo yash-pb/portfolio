@@ -3,7 +3,7 @@
         <!-- Header -->
         <MainHeader />
         <!-- content -->
-        <div class="grid grid-cols-12 gap-10 justify-between mt-5">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-10 justify-between">
             <!-- container grid grid-cols-12 md:gap-10 justify-between lg:mt-[220px] -->
             <!-- <div> -->
             <ProfileCard :profile_data="data" />
