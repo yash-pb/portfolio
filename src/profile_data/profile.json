@@ -43,12 +43,38 @@
     ],
     "work": [
         {
-            "startAt": "13-07-2021",
-            "endAt": "31-03-2024",
+            "startAt": "07-2021",
+            "endAt": "03-2024",
             "company": "abc",
-            "description": "description",
+            "description": "lorem",
             "role": "Back-end Developer",
-            "tags": ["php", "html"]
+            "tags": [
+                {
+                    "name": "PHP",
+                    "color": "#7079aa"
+                },
+                {
+                    "name": "HTML",
+                    "color": "#ef6d20"
+                }
+            ]
+        },
+        {
+            "startAt": "07-2021",
+            "endAt": "03-2024",
+            "company": "abc",
+            "description": "lorem",
+            "role": "Back-end Developer",
+            "tags": [
+                {
+                    "name": "PHP",
+                    "color": "#7079aa"
+                },
+                {
+                    "name": "HTML",
+                    "color": "#ef6d20"
+                }
+            ]
         }
     ]
 }
