@@ -8,8 +8,8 @@
             <!-- <div> -->
             <ProfileCard :profile_data="data" />
             <!-- </div> -->
-            <div class="col-span-12 lg:col-span-8">
-                <div class="shadow lg:w-[526px] h-[144px] lg:block p-[30px] ml-auto mb-10 rounded-[16px] bg-white dark:bg-[#111111] ">
+            <div class="col-span-12 lg:col-span-8 mt-8">
+                <div class="shadow lg:w-[526px] h-[144px] lg:block p-[30px] ml-auto mb-5 rounded-[16px] bg-white dark:bg-[#111111] ">
                     <nav class="lg:block">
                         <ul class="flex">
                             <RouterLink to="/"
