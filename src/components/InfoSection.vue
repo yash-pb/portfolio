@@ -2,7 +2,7 @@
     <div class="p-7 rounded-2xl mt-7 bg-[#F3F6F6] dark:bg-[#1D1D1D] w-full" v-if="info">
         <div class="flex py-2.5 border-[#E3E3E3] dark:border-[#3D3A3A] text-xl" v-for="(detail, index) in info"
         :class="{'border-b': (index != info.length-1)}" :key="index">
-            <span class="flex-shrink-0 socialbtn dark:bg-black" :class="'text-['+detail.color+']'"><svg
+            <span class="flex socialbtn dark:bg-black items-center justify-content-center" :class="'text-['+detail.color+']'"><svg
                     stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em"
                     width="1em" xmlns="http://www.w3.org/2000/svg">
                     <path

@@ -12,7 +12,7 @@
             "name": "instagram",
             "url": "https://instagram.com",
             "icon": "../assets/svgs/instagram.svg",
-            "color": "#1773EA"
+            "color": "#f73f5f"
         }
     ],
     "info": [
@@ -32,19 +32,19 @@
             "name": "Email",
             "value": "xyz@gmail.com",
             "icon": "",
-            "color": "#E93B81"
+            "color": "#FD7590"
         },
         {
             "name": "DOB",
             "value": "01-01-2001",
             "icon": "",
-            "color": "#E93B81"
+            "color": "#C17CEB"
         }
     ],
     "work": [
         {
-            "startAt": "07-2021",
-            "endAt": "03-2024",
+            "startAt": "07/2021",
+            "endAt": "03/2024",
             "company": "abc",
             "description": "lorem",
             "role": "Back-end Developer",
@@ -60,8 +60,8 @@
             ]
         },
         {
-            "startAt": "07-2021",
-            "endAt": "03-2024",
+            "startAt": "07/2021",
+            "endAt": "03/2024",
             "company": "abc",
             "description": "lorem",
             "role": "Back-end Developer",
