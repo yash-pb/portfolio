@@ -1,0 +1,54 @@
+{
+    "name": "Monalisa Ashley",
+    "designation": "Ui/Ux Designer",
+    "social": [
+        {
+            "name": "linkdin",
+            "url": "https://in.linkedin.com",
+            "icon": "linkdin",
+            "color": "#1773EA"
+        },
+        {
+            "name": "instagram",
+            "url": "https://instagram.com",
+            "icon": "../assets/svgs/instagram.svg",
+            "color": "#1773EA"
+        }
+    ],
+    "info": [
+        {
+            "name": "Phone",
+            "value": "123456789",
+            "icon": "",
+            "color": "#E93B81"
+        },
+        {
+            "name": "Location",
+            "value": "AHM",
+            "icon": "",
+            "color": "#6AB5B9"
+        },
+        {
+            "name": "Email",
+            "value": "xyz@gmail.com",
+            "icon": "",
+            "color": "#E93B81"
+        },
+        {
+            "name": "DOB",
+            "value": "01-01-2001",
+            "icon": "",
+            "color": "#E93B81"
+        }
+    ],
+    "work": [
+        {
+            "startAt": "13-07-2021",
+            "endAt": "31-03-2024",
+            "company": "abc",
+            "description": "description",
+            "role": "Back-end Developer",
+            "tags": ["php", "html"]
+        }
+    ]
+}
