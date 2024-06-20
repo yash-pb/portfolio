@@ -4,10 +4,10 @@
             <!-- lg+ -->
             <nav class="flex items-center justify-between h-16 lg:h-20">
                 <div class="flex-shrink-0">
-                    <a href="#" title="" class="flex">
+                    <a href="#" title="" class="flex text-4xl font-black">
                         <!-- <img class="w-auto h-8 lg:h-10"
                             src="https://cdn.rareblocks.xyz/collection/celebration/images/logo-alt.svg" alt="Intro" /> -->
-                        Portfolio
+                        Welcome
                     </a>
                 </div>
 
@@ -20,7 +20,7 @@
                     </svg>
                 </button> -->
 
-                <div class="md:flex md:items-center md:space-x-10 theme-toggle" @click="themeToggle">
+                <!-- <div class="md:flex md:items-center md:space-x-10 theme-toggle" @click="themeToggle">
                     <span
                         class="bg-white w-[40px] hover:text-white h-[40px] rounded-full lg:flex justify-center items-center text-black hover:bg-[#ef4060] transition-all duration-300 ease-in-out cursor-pointer ml-2 "><svg
                             stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
@@ -41,7 +41,7 @@
                             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                         </svg></span>
-                </div>
+                </div> -->
             </nav>
         </div>
     </header>
