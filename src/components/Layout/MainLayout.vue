@@ -78,7 +78,6 @@ import profileJson from '../../profile_data/profile.json'
 const data = computed(() => {
     return profileJson;
 });
-console.log('layout', data);
 </script>
 <style>
 body {
