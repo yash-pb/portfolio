@@ -1,6 +1,6 @@
 <template>
     <PageHeader title="Work Experience" />
-    <div class="mt-5 wrapper">
+    <div class="wrapper">
         <ol class="group/list" v-if="data.work">
             <li class="mb-6" v-for="(work, index) in data.work" :key="index">
                 <!-- <div class="grid grid-cols-11 grid-rows-1 gap-5">

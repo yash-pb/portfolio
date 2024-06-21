@@ -1,7 +1,7 @@
 <template>
     <section class="m-5">
         <!-- Header -->
-        <MainHeader />
+        <MainHeader :headers="data.navbar"/>
         <!-- content -->
         <div class="grid grid-cols-1 md:grid-cols-12 lg:gap-10 justify-between">
             <!-- container grid grid-cols-12 md:gap-10 justify-between lg:mt-[220px] -->
@@ -9,8 +9,8 @@
             <ProfileCard :profile_data="data" />
             <!-- </div> -->
             <div class="col-span-12 lg:col-span-8 mt-8">
-                <div class="shadow lg:w-[526px] h-[144px] lg:block p-[30px] ml-auto mb-5 rounded-[16px] bg-white dark:bg-[#111111] ">
-                    <nav class="lg:block">
+                <div class="shadow lg:w-[526px] h-[144px] hidden lg:block p-[30px] ml-auto mb-5 rounded-[16px] bg-white dark:bg-[#111111] ">
+                    <nav class="hidden lg:block">
                         <ul class="flex">
                             <RouterLink to="/"
                                 class="router-link w-full h-20 rounded-[10px]  cursor-pointer  font-poppins  bg-[#F3F6F6]  font-medium mx-2.5  text-xtiny text-gray-lite dark:text-[#A6A6A6] justify-center flex flex-col items-center   transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425]">
@@ -77,11 +77,7 @@ const data = computed(() => {
     return profileJson;
 });
 </script>
-<style>
-body {
-    background-color: aliceblue;
-}
-
+<style scoped>
 .router-link-active.router-link-exact-active {
     background-image: linear-gradient(to right, #FA5252, #DD2476);
     color: white;
