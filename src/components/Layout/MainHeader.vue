@@ -29,9 +29,9 @@
             </nav>
         </div>
     </header>
-    <div class="w-full absolute top-[5rem] bg-gray-100 dark:bg-[#1d2936] items-center z-10 toggle-sidebar hidden justify-between border-black-2 md:hidden md:order-1 dark:text-white" id="navbar-sticky">
+    <div class="w-full absolute top-[5rem] bg-gray-200 dark:bg-[#1d2936] items-center z-10 toggle-sidebar hidden justify-between border-black-2 md:hidden md:order-1 dark:text-white" id="navbar-sticky">
         <ul v-if="headers" class="flex flex-col md:p-0 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-            <li v-for="(header, index) in headers" :key="index" @click="hideSidebar">
+            <li v-for="(header, index) in headers" :key="index" @click="openSidebar">
                 <RouterLink :to="header.url" class="block py-2 px-3 text-black-500 rounded md:bg-transparent md:p-0" aria-current="page">
                     {{ header.title }}
                 </RouterLink>
@@ -56,9 +56,6 @@ const themeToggle = () => {
 }
 
 const openSidebar = () => {
-    document.querySelector(".toggle-sidebar").classList.toggle("hidden");
-}
-const hideSidebar = () => {
     document.querySelector(".toggle-sidebar").classList.toggle("hidden");
 }
 </script>
