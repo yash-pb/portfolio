@@ -27,4 +27,4 @@ dist-ssr
 .netlify
 
 
-profile.json
+./src/profile_data/profile.json
