@@ -1,12 +1,12 @@
 <template>
-    <section class="m-5">
+    <section class="p-5 bg-[#F0F8FF] dark:bg-[#3b3b3b]">
         <!-- Header -->
         <MainHeader :headers="data.navbar"/>
         <!-- content -->
         <div class="grid grid-cols-1 md:grid-cols-12 lg:gap-10 justify-between">
             <ProfileCard :profile_data="data" />
             <div class="col-span-12 lg:col-span-8 mt-8">
-                <div class="shadow lg:w-[526px] h-[144px] hidden lg:block p-[30px] ml-auto mb-5 rounded-[16px] bg-white dark:bg-[#111111] ">
+                <div class="shadow lg:w-[526px] h-[144px] hidden lg:block p-[30px] ml-auto mb-5 rounded-[16px] bg-white dark:bg-gray-400 ">
                     <nav class="hidden lg:block">
                         <ul class="flex" v-if="data.navbar">
                             <RouterLink v-for="(navbar, index) in data.navbar" :key="index" :to="navbar.url" class="router-link w-full h-20 rounded-[10px]  cursor-pointer  font-poppins  bg-[#F3F6F6]  font-medium mx-2.5  text-xtiny text-gray-lite dark:text-[#A6A6A6] justify-center flex flex-col items-center   transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425]">
@@ -16,7 +16,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="shadow lg:rounded-2xl bg-white dark:bg-[#111111]">
+                <div class="shadow rounded-2xl bg-white dark:bg-[#1d2936] dark:text-white dark:border">
                     <div data-aos="fade" class="aos-init aos-animate">
                         <div class="p-5 md:p-8 lg:p-12">
                             <router-view />

@@ -24,14 +24,14 @@
                     </div>
                 </div> -->
                 <div class="details flex flex-col lg:grid lg:grid-cols-12 lg:grid-rows-1 lg:gap-5">
-                    <div class="dates text-gray-500 text-sm lg:col-span-3 xl:text-lg lg:mt-[5px]">
+                    <div class="dates text-gray-500 dark:text-slate-50 text-sm lg:col-span-3 xl:text-lg lg:mt-[5px]">
                         {{ work.startAt }} &nbsp;-&nbsp; {{ work.endAt }}
                     </div>
                     <div class="lg:col-span-8 lg:col-start-4">
                         <div class="company-details text-2xl xl:text-3xl">
                             <span>{{ work.company }}</span> . <span>{{ work.role }}</span>
                         </div>
-                        <div class="description text-base text-gray-800 xl:text-lg mb-3" v-html="work.description">
+                        <div class="description text-base text-gray-800 dark:text-white xl:text-lg mb-3" v-html="work.description">
                         </div>
                         <div class="tags flex flex-wrap leading-8" v-if="work.tags">
                             <span v-for="(tag, tIndex) in work.tags" :key="tIndex"

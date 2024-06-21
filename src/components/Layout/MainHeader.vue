@@ -1,5 +1,5 @@
 <template>
-    <header class="border-b border-gray-700 text-black mb-5">
+    <header class="border-b border-gray-700 text-black mb-5 dark:border-white dark:text-white">
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <nav class="flex items-center justify-between h-16 lg:h-20">
                 <div class="flex-shrink-0">
@@ -16,8 +16,8 @@
                     </svg>
                 </button>
 
-                <div class="hidden md:relative items-center z-10 sidebar lg:hidden justify-between w-96 md:flex md:w-auto md:order-1" id="navbar-sticky">
-                    <ul v-if="headers" class="flex flex-col md:p-0 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <div class="hidden md:relative items-center z-10 sidebar lg:hidden justify-between w-96 md:flex md:w-auto md:order-1 dark:text-white" id="navbar-sticky">
+                    <ul v-if="headers" class="flex flex-col md:p-0 font-medium border border-gray-100 dark:border-white-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                         <li v-for="(header, index) in headers" :key="index">
                             <RouterLink :to="header.url" class="block py-2 px-3 text-black-500 rounded md:bg-transparent md:p-0" aria-current="page">
                                 {{ header.title }}
@@ -25,10 +25,11 @@
                         </li>
                     </ul>
                 </div>
+                <!-- change theme -->
             </nav>
         </div>
     </header>
-    <div class="w-full absolute bg-gray-100 items-center z-10 toggle-sidebar hidden justify-between border-black-2 md:hidden md:order-1" id="navbar-sticky">
+    <div class="w-full absolute top-[5rem] bg-gray-100 dark:bg-[#1d2936] items-center z-10 toggle-sidebar hidden justify-between border-black-2 md:hidden md:order-1 dark:text-white" id="navbar-sticky">
         <ul v-if="headers" class="flex flex-col md:p-0 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
             <li v-for="(header, index) in headers" :key="index" @click="hideSidebar">
                 <RouterLink :to="header.url" class="block py-2 px-3 text-black-500 rounded md:bg-transparent md:p-0" aria-current="page">
@@ -37,22 +38,21 @@
             </li>
         </ul>
     </div>
+    <!-- <button @click="themeToggle" class="btn dark:text-white">Change</button> -->
 </template>
 <script setup>
-import { ref } from "vue";
 import { RouterLink } from "vue-router";
 
-const theme = ref(false);
 const props = defineProps(['headers']);
+const htmlElement = document.documentElement;
 const themeToggle = () => {
-    console.log('called => ', theme.value);
-    // if (!theme) {
-    //     document.documentElement.classList.add('dark');
-    // } else {
-    //     document.documentElement.classList.remove('dark')
-    // }
-    // theme.value = !theme.value;
-    // console.log('end => ', theme.value);
+    if (htmlElement.classList.contains('dark')) {
+        htmlElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+    } else {
+        htmlElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+    }
 }
 
 const openSidebar = () => {
