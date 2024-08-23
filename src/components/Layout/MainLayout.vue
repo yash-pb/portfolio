@@ -3,9 +3,9 @@
         <!-- Header -->
         <MainHeader :headers="data.navbar"/>
         <!-- content -->
-        <div class="grid grid-cols-1 md:grid-cols-12 lg:gap-10 justify-between">
+        <div class="grid grid-cols-1 md:grid-cols-12 lg:gap-10 justify-between flex-col md:flex-col">
             <ProfileCard :profile_data="data" />
-            <div class="col-span-12 lg:col-span-8 mt-8">
+            <div class="col-span-12 lg:col-span-8 mt-8 order-1 md:order-2 mb-5 lg:mb-0">
                 <div class="shadow lg:w-[526px] h-[144px] hidden lg:block p-[30px] ml-auto mb-5 rounded-[16px] bg-white dark:bg-gray-400 ">
                     <nav class="hidden lg:block">
                         <ul class="flex" v-if="data.navbar">

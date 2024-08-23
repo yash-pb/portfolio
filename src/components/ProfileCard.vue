@@ -1,5 +1,5 @@
 <template>   
-    <div class="w-full bg-white border border-gray-200 rounded-[16px] shadow dark:bg-gray-800 dark:border-white col-span-12 lg:col-span-4 lg:sticky top-44">
+    <div class="order-2 md:order-1 w-full bg-white border border-gray-200 rounded-[16px] shadow dark:bg-gray-800 dark:border-white col-span-12 lg:col-span-4 lg:sticky top-44">
         <div class="flex flex-col items-center pb-10 mt-5 p-7">
             <img class="w-[13rem] h-[13rem] lg:w-[11rem] lg:h-[11rem] mb-3 rounded-full shadow-lg" src="../assets/images/profile.jpg" alt="Bonnie image"/>
             <h1 class="mt-6 mb-1 text-2xl md:text-4xl lg:text-3xl font-semibold dark:text-white">{{ profile_data.name }}</h1>

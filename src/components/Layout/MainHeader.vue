@@ -27,8 +27,8 @@
                 </div>
                 <!-- change theme -->
                 <div class="ml-3">
-                    <div class="md:flex md:items-center md:space-x-10 theme-toggle" @click="themeToggle">
-                        <span class="bg-white w-[40px] hover:text-white h-[40px] rounded-full lg:flex justify-center items-center text-black hover:bg-[#ef4060] transition-all duration-300 ease-in-out cursor-pointer ml-2 "><svg
+                    <div class="flex items-center md:space-x-10 theme-toggle" @click="themeToggle">
+                        <span class="flex bg-white w-[40px] hover:text-white h-[40px] rounded-full lg:flex justify-center items-center text-black hover:bg-[#ef4060] transition-all duration-300 ease-in-out cursor-pointer ml-2 "><svg
                                 stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                                 stroke-linecap="round" stroke-linejoin="round" class="text-3xl dark-mode-light dark:hidden"
                                 height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
